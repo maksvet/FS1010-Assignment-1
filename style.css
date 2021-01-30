@@ -20,7 +20,7 @@ h1 span{
 }
 
 h1{
-    font-size: 50px;
+    font-size: 44px;
 }
 p{
     color: grey;
@@ -47,13 +47,14 @@ p{
 }
 
 
+
 .grid{
     width: relative;
     height: relative;
     display: grid;
     grid-gap: 10px;
-    /* grid-template-columns: repeat(auto-fit, minmax(30px, 1fr)); */
-    grid-template-columns: repeat(auto-fit, (3,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+    /* grid-template-columns: repeat(auto-fit, (3,1fr)); */
     grid-auto-rows: minmax(220px, auto);
     
 }
@@ -65,7 +66,6 @@ p{
 
 .grid-item > img{
     width: 100%;
-    /* height: 100%; */
     max-height: 100%;
     position: absolute;
     left:0px;
@@ -90,21 +90,34 @@ p{
     display: block;
 }
 
+.gridOne{
+    grid-column: auto;
+    grid-row: auto;
+}
 
 .gridTwo{
     grid-column: 2 / 3;
-    grid-row: 1/ 3;
+    grid-row: 1 / 3;
+}
+
+.gridThree{
+    grid-column: auto;
+    grid-row: auto;
 }
 
 .gridFour{
-    grid-column: 1 /2;
-    grid-row: 2 /4;
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
 }
 
+.gridFive{
+    grid-column: auto;
+    grid-row: auto;
+}
 
 .gridSix{
-    grid-column: 3/4;
-    grid-row: 2/4;
+    grid-column: 3 / 4;
+    grid-row: 2 / 4;
 }
 
 
@@ -133,7 +146,7 @@ span p{
 
 
 .container {
-    margin-top: 200px
+    margin-top: 50px
 }
 
 .social-icon .fa {
